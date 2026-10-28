@@ -1,0 +1,6 @@
+feature,train_missing_count,test_missing_count,train_skewness,train_median_fit,train_mean_fit
+open,10,1,6.8366,62.87,82.1364
+high,7,1,6.8347,63.465,82.9173
+low,7,1,6.8372,62.27,81.3353
+close,0,0,6.8352,62.9,82.1511
+volume,0,0,10.5217,2124234.5,4349698.526

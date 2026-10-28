@@ -1,0 +1,124 @@
+{
+  "task_id": "Task 1",
+  "official_level": "Level 1 (Basic) \u2014 Task 1",
+  "title": "Data Preprocessing for Machine Learning",
+  "runtime": {
+    "timestamp_utc": "2026-10-28T12:14:00Z",
+    "python_version": "3.13.16",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit_learn": "1.6.1",
+      "scipy": "1.17.1",
+      "matplotlib": "3.10.9",
+      "seaborn": "0.13.2",
+      "joblib": "1.5.3"
+    }
+  },
+  "stock_pipeline": {
+    "raw_rows": 497472,
+    "supervised_train_rows": 371440,
+    "supervised_test_rows": 125527,
+    "train_date_range": [
+      "2014-01-02",
+      "2016-12-30"
+    ],
+    "test_date_range": [
+      "2017-01-03",
+      "2017-12-28"
+    ],
+    "raw_missing_by_column": {
+      "symbol": 0,
+      "date": 0,
+      "open": 11,
+      "high": 8,
+      "low": 8,
+      "close": 0,
+      "volume": 0
+    },
+    "train_missing_by_column": {
+      "open": 10,
+      "high": 7,
+      "low": 7,
+      "close": 0,
+      "volume": 0
+    },
+    "test_missing_by_column": {
+      "open": 1,
+      "high": 1,
+      "low": 1,
+      "close": 0,
+      "volume": 0
+    },
+    "transformed_feature_dim": 525,
+    "post_imputation_nans_train": 0,
+    "post_imputation_nans_test": 0,
+    "unseen_2017_test_symbols_count": 6,
+    "unseen_2017_test_symbols_sample": [
+      "APTV",
+      "BHF",
+      "BHGE",
+      "DWDP",
+      "DXC",
+      "HLT"
+    ],
+    "close_train_scaled_mean": 0.0,
+    "close_train_scaled_std": 1.0,
+    "close_test_scaled_mean_shift": 0.180111,
+    "close_test_scaled_std_shift": 1.342625,
+    "minmax_train_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "churn_pipeline": {
+    "train_rows": 2666,
+    "test_rows": 667,
+    "train_test_overlap_rows": 0,
+    "raw_feature_count": 19,
+    "transformed_feature_count": 67,
+    "max_vif_before_collinearity_pruning": 10410725.803,
+    "max_vif_after_collinearity_pruning": 1.004,
+    "train_numeric_scaled_max_abs_mean": 0.0,
+    "train_numeric_scaled_std_range": [
+      1.0,
+      1.0
+    ]
+  },
+  "iris_pipeline": {
+    "train_rows": 120,
+    "test_rows": 30,
+    "feature_count": 4,
+    "train_scaled_means": [
+      -0.0,
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "train_scaled_stds": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "sentiment_hygiene": {
+    "raw_shape": [
+      732,
+      15
+    ],
+    "cleaned_shape": [
+      732,
+      13
+    ],
+    "raw_platform_unique": 4,
+    "cleaned_platform_unique": 3,
+    "raw_sentiment_unique": 279,
+    "cleaned_sentiment_unique": 191
+  },
+  "figures": [
+    "results/figures/fig01_dataset_quality_and_missingness_audit.png",
+    "results/figures/fig02_preprocessing_scaling_and_distributions.png"
+  ]
+}

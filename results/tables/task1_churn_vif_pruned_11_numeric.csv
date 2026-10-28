@@ -1,0 +1,12 @@
+feature,r_squared_with_others,vif
+Total day calls,0.00397891,1.004
+Total intl minutes,0.00335137,1.003
+Account length,0.00310332,1.003
+Total intl calls,0.00337118,1.003
+Number vmail messages,0.0017252,1.002
+Total day minutes,0.00187655,1.002
+Total eve minutes,0.00154815,1.002
+Total night calls,0.00228908,1.002
+Customer service calls,0.0017778,1.002
+Total night minutes,0.00078717,1.001
+Total eve calls,0.00066229,1.001

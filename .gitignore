@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing & caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large binary / archive scratch files (raw/processed CSVs and trained .joblib pipelines ARE tracked for evaluator reproducibility)
+data/processed/*.npz
+data/processed/*.parquet
+
+# Official external PDF (copyright Codveda Technologies)
+docs/Official_Codveda_ML_Task_List.pdf
+
+# Secrets & environment variables (never commit tokens or credentials)
+.env
+.env.*
+*.pem
+*.key
+.git-credentials
+.netrc
+
+# OS artefacts
+.DS_Store
+Thumbs.db

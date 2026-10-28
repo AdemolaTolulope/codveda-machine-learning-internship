@@ -1,0 +1,81 @@
+project:
+  name: "Codveda Technologies Machine Learning Internship Portfolio"
+  internship_period: "2026-10-01 to 2026-11-01"
+  execution_date: "2026-10-28"
+  random_seed: 42
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  models_dir: "models"
+  metrics_dir: "results/metrics"
+  figures_dir: "results/figures"
+  tables_dir: "results/tables"
+  predictions_dir: "results/predictions"
+  reports_dir: "reports"
+
+datasets:
+  iris:
+    relative_path: "1) iris.csv"
+    sha256: "c52742e50315a99f956a383faedf7575552675f6409ef0f9a47076dd08479930"
+    target_col: "species"
+    test_size: 0.20
+    cv_folds: 5
+  stock_prices:
+    relative_path: "2) Stock Prices Data Set.csv"
+    sha256: "2200ea7c7b98791314cb5b4a3072b4d4166da1ed78a3e3e178339199109837d2"
+    train_end_date: "2016-12-31"
+  sentiment:
+    relative_path: "3) Sentiment dataset.csv"
+    sha256: "725c6f7bc928c2bf741094f37078024b305982523fe6d0b8cb20a6cf5275c63b"
+  house_prices:
+    relative_path: "4) house Prediction Data Set.csv"
+    sha256: "baadf72995725d76efe787b664e1f083388c79ba21ef9a7990d87f774184735a"
+  churn:
+    train_relative_path: "Churn Prdiction Data/churn-bigml-80.csv"
+    test_relative_path: "Churn Prdiction Data/churn-bigml-20.csv"
+    train_sha256: "b8bbd0099748ba3b0f337538cfa5997b5255bdc23c35144ffabba3cafb192550"
+    test_sha256: "c73bb8e7a47c8fced62ddef54741bbbc4005243fb40a65996360337844fd17f7"
+    target_col: "Churn"
+    cv_folds: 5
+    redundant_charge_cols:
+      - "Total day charge"
+      - "Total eve charge"
+      - "Total night charge"
+      - "Total intl charge"
+
+tasks:
+  task1_preprocessing:
+    level: "Level 1 (Basic)"
+    official_id: "Level 1 - Task 1"
+    title: "Data Preprocessing for Machine Learning"
+  task2_knn:
+    level: "Level 1 (Basic)"
+    official_id: "Level 1 - Task 3"
+    title: "K-Nearest Neighbors (KNN) Classifier"
+    k_grid: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 25, 31]
+  task3_logistic_regression:
+    level: "Level 2 (Intermediate)"
+    official_id: "Level 2 - Task 1"
+    title: "Logistic Regression for Binary Classification"
+    c_grid: [0.01, 0.05, 0.1, 0.5, 1.0, 5.0, 10.0]
+    bootstrap_iterations: 1000
+  task4_decision_tree:
+    level: "Level 2 (Intermediate)"
+    official_id: "Level 2 - Task 2"
+    title: "Decision Trees for Classification"
+    max_depth_grid: [2, 3, 4, 5, null]
+    min_samples_leaf_grid: [1, 2, 3, 5]
+  task5_random_forest:
+    level: "Level 3 (Advanced)"
+    official_id: "Level 3 - Task 1"
+    title: "Random Forest Classifier"
+    stability_seeds: [11, 22, 33, 42, 55, 66, 77, 88, 99, 101]
+    permutation_repeats: 30
+  task6_svm:
+    level: "Level 3 (Advanced)"
+    official_id: "Level 3 - Task 2"
+    title: "Support Vector Machine (SVM) for Binary Classification"
+    linear_c_grid: [0.01, 0.1, 1.0, 10.0]
+    rbf_c_grid: [0.5, 1.0, 5.0, 10.0, 25.0]
+    rbf_gamma_grid: ["scale", "auto", 0.01, 0.03, 0.05, 0.1]
